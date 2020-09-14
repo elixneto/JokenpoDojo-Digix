@@ -11,8 +11,7 @@ namespace JokenpoDojoTeste
         {
             Itens primeiraEntrada = Itens.Papel, segundaEntrada = Itens.Papel;
             var mensagemDeRetornoEsperada = "Empate";
-            var jokenpo = new Jokenpo();
-            
+            var jokenpo = new Jokenpo();            
             
             var mensagemDeRetornoDaClassificacao = jokenpo.ClassificarJogada(primeiraEntrada, segundaEntrada);
 
