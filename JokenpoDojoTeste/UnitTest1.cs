@@ -6,10 +6,11 @@ namespace JokenpoDojoTeste
     public class UnitTest1
     {
         [Fact]
-        public void Verificar_se_as_entradas_sao_iguais()
+        public void Deve_empatar()
         {
-            //Verificar se os itens são iguais
-            //No caso dos itens serem diferentes, eu retorno o vencedor
+            Itens primeiraEntrada = Itens.Papel, segundaEntrada = Itens.Papel;
+
+            
         }
     }
 }
