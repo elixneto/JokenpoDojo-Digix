@@ -10,11 +10,13 @@ namespace JokenpoDojoTeste
         public void Deve_empatar()
         {
             Itens primeiraEntrada = Itens.Papel, segundaEntrada = Itens.Papel;
-            var mensagemDeRetorno = "Empate";
+            var mensagemDeRetornoEsperada = "Empate";
+            var jokenpo = new Jokenpo();
+            
+            
+            var mensagemDeRetornoDaClassificacao = jokenpo.ClassificarJogada(primeiraEntrada, segundaEntrada);
 
-            var jokenpo = new Jokenpo();            
-
-            Action.Equals(mensagemDeRetorno);
+            Assert.Equal(mensagemDeRetornoEsperada, mensagemDeRetornoDaClassificacao);
         }
     }
 }
