@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using JokenpoDojo;
 
 namespace JokenpoDojoTeste
 {
@@ -9,8 +10,11 @@ namespace JokenpoDojoTeste
         public void Deve_empatar()
         {
             Itens primeiraEntrada = Itens.Papel, segundaEntrada = Itens.Papel;
+            var mensagemDeRetorno = "Empate";
 
-            
+            var jokenpo = new Jokenpo();            
+
+            Action.Equals(mensagemDeRetorno);
         }
     }
 }
