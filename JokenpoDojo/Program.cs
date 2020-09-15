@@ -1,4 +1,6 @@
 ﻿using System;
+using JokenpoDojo.Jogadas;
+using JokenpoDojo.Resultados;
 
 namespace JokenpoDojo
 {
@@ -6,7 +8,9 @@ namespace JokenpoDojo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var resultado = new GeradorDeResultadoDaPartida(new Pedra(), new Papel());
+
+            Console.WriteLine(resultado.ObterResultado());
         }
     }
 }
